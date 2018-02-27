@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 					}).appendTo( "#employeeList" );
 			}
-		});
+		
 	
   var $isotope = $('.bulleted').isotope({
   // set itemSelector so .grid-sizer is not used in layout
@@ -29,6 +29,7 @@ $(document).ready(function(){
     columnWidth: '.bulleted > li:first-child'
   }
   });
+
 $('.employee-button').on('click', function(event){
 	event.preventDefault();
 	
@@ -39,7 +40,7 @@ $('.employee-button').on('click', function(event){
 	$isotope.isotope({ filter: filterValue });
 });
 
-
+});
 });
 
 })(jQuery);
